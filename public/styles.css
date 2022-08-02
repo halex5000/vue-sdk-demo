@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  padding: 5px;
+}
+
+.middle-image {
+  text-align: "center"
+}
+
+img.logo {
+  height: 150px;
+}
+
+img.plus {
+  height: 75px;
+  pad: 20px;
+}
+
+.launchdarkly-logo {
+  width: 150px;
+  height: 150px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(launchdarkly-osmo.png)
+}
+
+.vue-logo {
+  width: 150px;
+  height: 150px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(vue-logo.png)
+}
+
+.plus-sign {
+  width: 75px;
+  height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(plus.png)
+}
+
+.floatLeft { float: left; }
+
+.floatRight { float: right; }
+
+.header {
+  background-image: url("launchdarkly-osmo.png"), url("launchdarkly-osmo.png")
+}
