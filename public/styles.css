@@ -1,61 +1,50 @@
-* {
-  box-sizing: border-box;
+:root {
+  --black: #282828;
+  --blue: #3DD6F5;
+  --darkblue: #405BFF;
+  --red: #FF386B;
+  --purple: #A34FDE;
+  --yellow: #EBFF38;
+  --gray: #939598;
+  --graytext: #BCBEC0;
+  --highlight: #EBFF38;
 }
 
-.row {
+body {
+  background-color: var(--black);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 20%;
-  padding: 5px;
+h1 {
+  color: var(--graytext);
 }
 
-.middle-image {
-  text-align: "center"
-}
-
-img.logo {
+header {
+  display: flex;
   height: 150px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./public/white-osmo.png"), url("./public/vue.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  background-size: 150px 150px, 150px 150px;
+  padding: 175px;
 }
 
-img.plus {
-  height: 75px;
-  pad: 20px;
+a {
+  color: var(--blue);
 }
 
-.launchdarkly-logo {
-  width: 150px;
-  height: 150px;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(launchdarkly-osmo.png)
+a.visited {
+  color: var(--red);
 }
 
-.vue-logo {
-  width: 150px;
-  height: 150px;
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(vue-logo.png)
+a.active {
+  color: var(--yellow);
 }
 
-.plus-sign {
-  width: 75px;
-  height: 75px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(plus.png)
-}
-
-.floatLeft { float: left; }
-
-.floatRight { float: right; }
-
-.header {
-  background-image: url("launchdarkly-osmo.png"), url("launchdarkly-osmo.png")
+button {
+  color: var(--darkblue);
 }
